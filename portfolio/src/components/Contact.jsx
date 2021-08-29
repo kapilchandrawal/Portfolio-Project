@@ -1,10 +1,28 @@
-import React from 'react'
+import React from 'react';
+import './Contact.css';
+import image from '../assets/Devi_Ahilya_Vishwavidyalaya_Logo.png';
+
 
 export default function Contact() {
     return (
-        <div>
+        <div className='contact_page'>
 
-            <h1>Contact</h1>
+            <div class="col-sm-6 col-md-4 text-center footer-navigation">
+                <p><img src={image} style={{}} alt=""/></p>
+                <p class="links">Master of Computer Applications (MCA) </p>
+                <p class="links">International Institute Of Professional Studies</p>
+                <p class="links">Devi Ahilya Vishwavidyalaya, Indore</p>
+                <p class="company-name">2014 - 2020</p>
+            </div>
+            <div class="">
+                <div>
+                    <p><span class="">Gulab Bagh Colony</span> Indore,&nbsp;Madhya Pradesh,India-452010</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="mailto:kapilchandrawal001@gmail.com" target="_blank" rel="noreferrer">kapilchandrawal001@gmail.com</a>
+                    </p>
+                </div>
+            </div>
             <div class="social-links">
                 <h4 style={{ fontSize: 25 }}>Connect</h4>
                 <div>
@@ -19,9 +37,6 @@ export default function Contact() {
                         target="_blank" rel="noreferrer">GitHub
                     </a>
                 </div>
-
-
-
             </div >
         </div >
     )
