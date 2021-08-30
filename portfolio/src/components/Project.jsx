@@ -25,11 +25,12 @@ const useStyles = makeStyles({
         transform: 'scale(0.8)',
     },
     title: {
-        fontSize: 14,
+        fontSize: 18,
     },
     pos: {
         marginBottom: 12,
     },
+    
 });
 
 export default function Project() {
@@ -37,11 +38,12 @@ export default function Project() {
     const bull = <span className={classes.bullet}>•</span>;
 
     return (
+        
         <Grid container >
             <Grid item xs={1} lg={2}>
-
             </Grid>
             <Grid container xs={10} lg={8}>
+                
             <Grid item xs={12} lg={6}>
                 <Card className={classes.root}>
                     <CardContent className={classes.card}>
@@ -54,7 +56,7 @@ export default function Project() {
                         </Typography>
                         
                     </CardContent>
-                    <CardActions>
+                    <CardActions  className="btn">
                         <Button size="small" href="https://github.com/kapilchandrawal/React-Cart">Github</Button>
                     </CardActions>
                 </Card>
@@ -71,7 +73,7 @@ export default function Project() {
                         </Typography>
                         
                     </CardContent>
-                    <CardActions>
+                    <CardActions className="btn">
                         <Button size="small" href="https://github.com/kapilchandrawal/Responsive-website-gradient-color">Github</Button>
                     </CardActions>
                 </Card>
@@ -91,7 +93,7 @@ export default function Project() {
                         </Typography>
                         
                     </CardContent>
-                    <CardActions>
+                    <CardActions className="btn">
                     <Button size="small" href="https://github.com/kapilchandrawal/Giphy-search-engine">Github</Button>
                         
                     </CardActions>
@@ -111,7 +113,7 @@ export default function Project() {
                         </Typography>
                         
                     </CardContent>
-                    <CardActions>
+                    <CardActions className="btn">
                         
                     <Button size="small" href="https://github.com/kapilchandrawal/Giphy-search-engine">Github</Button>
                     </CardActions>
@@ -122,7 +124,7 @@ export default function Project() {
                     <CardContent>
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
                             <h3>My Portfolio</h3>
-                            <div class="tags"><small>HTML | CSS | BOOTSTRAP | JAVASCRIPT</small></div>
+                            <div class="tags"><small>HTML | CSS | MaterialUI | JAVASCRIPT</small></div>
                             <p  className="project-desc">A website built to showcase my portfolio to recruiters.</p>
                             
                         </Typography>
@@ -131,7 +133,7 @@ export default function Project() {
                         </Typography>
                         
                     </CardContent>
-                    <CardActions>
+                    <CardActions className="btn">
                         
                     <Button size="small" href="https://github.com/kapilchandrawal/Giphy-search-engine">Github</Button>
                     </CardActions>

@@ -15,7 +15,7 @@
     max-height: 70px;
     padding: 10px 5%;
     width: 90%;
-    position: fixed ;
+    /* position: fixed ; */
 }
 
 .navbar a {

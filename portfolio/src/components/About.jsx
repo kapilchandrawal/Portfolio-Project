@@ -19,18 +19,20 @@ import react_img from '../assets/react.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
+        flexGrow: 1
 
     },
-    tech_image:{
-        maxWidth:150+"px"
+    tech_image: {
+        maxWidth: 150 + "px"
     },
-    root2:{
-        
+    root2: {
+        display: 'flex',
+        justifyContent: 'space-around',
         background: 'none',
-        margin: 10+"%",
-        padding: '30px',
-        boxShadow: '4px 4px grey, -5px -7px green'
+        margin: 10 + "%",
+        // padding: '30px',
+        // boxShadow: '4px 4px grey, -5px -7px green',
+
     },
     paper: {
         padding: theme.spacing(2),
@@ -38,10 +40,10 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.secondary,
     },
     image: {
-        maxWidth: 300,
+        maxWidth: 250,
         borderRadius: 50 + "%",
         margin: 25 + "px",
-
+        boxShadow: '0 2px 10px rgba(0,0,0,.95)!important'
 
     },
     text: {
@@ -70,6 +72,11 @@ export default function About() {
                                 <h2>A Little About Me:</h2>
                             </span>
                         </strong><br></br>
+                        <p>
+                            Hello and welcome to my website. My name is Kapil Chandrawal and I am a post graduate
+                            student of Master of Computer Application at International Institute of Professional Studies.
+                            This website has all the relevant information.
+                        </p>
                         <p>As a computer science student, I&#39;ve worked on several projects both academic as well as for
                             self-learning. These projects cover certain aspects of multiple technologies such as web
                             development and database. This portfolio is one of my
@@ -82,91 +89,91 @@ export default function About() {
                     <div>
                         <h2>Major Technical Skills</h2>
                     </div>
-                    <Grid container>
+                    <Grid container className={classes.root2}>
                         <Grid item xs={1} >
 
                         </Grid>
 
                         <Grid item xs={10}>
-                            
-                                <Grid container xs={10} lg={8}>
-                                    <Grid item xs={12} lg={6}>
-                                        <Card className={classes.root2}>
-                                            <CardContent className={classes.card}>
-                                                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                                    <img src={html_img} className={classes.tech_image} alt=''></img>
 
-                                                </Typography>
+                            <Grid container xs={10} lg={8}>
+                                <Grid item xs={12} lg={6}>
+                                    <Card className={classes.root2}>
+                                        <CardContent className={classes.card}>
+                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                                <img src={html_img} className={classes.tech_image} alt=''></img>
 
-                                            </CardContent>
-                                            <CardActions>
-                                                HTML
-                                            </CardActions>
-                                        </Card>
+                                            </Typography>
 
-                                    </Grid>
-                                    <Grid item xs={12} lg={6}>
-                                        <Card className={classes.root2}>
-                                            <CardContent className={classes.card}>
-                                                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                        </CardContent>
+                                        <CardActions>
+
+                                        </CardActions>
+                                    </Card>
+
+                                </Grid>
+                                <Grid item xs={12} lg={6}>
+                                    <Card className={classes.root2}>
+                                        <CardContent className={classes.card}>
+                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
                                                 <img src={css_img} className={classes.tech_image} alt=''></img>
 
-                                                </Typography>
+                                            </Typography>
 
-                                            </CardContent>
-                                            <CardActions>
-                                                CSS
-                                            </CardActions>
-                                        </Card>
+                                        </CardContent>
+                                        <CardActions>
 
-                                    </Grid>
-                                    <Grid item xs={12} lg={6}>
-                                        <Card className={classes.root2}>
-                                            <CardContent className={classes.card}>
-                                                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                        </CardActions>
+                                    </Card>
+
+                                </Grid>
+                                <Grid item xs={12} lg={6}>
+                                    <Card className={classes.root2}>
+                                        <CardContent className={classes.card}>
+                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
                                                 <img src={bootstrap_img} className={classes.tech_image} alt=''></img>
 
-                                                </Typography>
+                                            </Typography>
 
-                                            </CardContent>
-                                            <CardActions>
-                                                Bootstrap
-                                            </CardActions>
-                                        </Card>
+                                        </CardContent>
+                                        <CardActions>
 
-                                    </Grid>
-                                    <Grid item xs={12} lg={6}>
-                                        <Card className={classes.root2}>
-                                            <CardContent className={classes.card}>
-                                                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                        </CardActions>
+                                    </Card>
+
+                                </Grid>
+                                <Grid item xs={12} lg={6}>
+                                    <Card className={classes.root2}>
+                                        <CardContent className={classes.card}>
+                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
                                                 <img src={js_img} className={classes.tech_image} alt=''></img>
 
-                                                </Typography>
+                                            </Typography>
 
-                                            </CardContent>
-                                            <CardActions>
-                                                Javaascipt
-                                            </CardActions>
-                                        </Card>
+                                        </CardContent>
+                                        <CardActions>
 
-                                    </Grid>
-                                    <Grid item xs={12} lg={6}>
-                                        <Card className={classes.root2}>
-                                            <CardContent className={classes.card}>
-                                                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                                        </CardActions>
+                                    </Card>
+
+                                </Grid>
+                                <Grid item xs={12} lg={6}>
+                                    <Card className={classes.root2}>
+                                        <CardContent className={classes.card}>
+                                            <Typography className={classes.title} color="textSecondary" gutterBottom>
                                                 <img src={react_img} className={classes.tech_image} alt=''></img>
 
-                                                </Typography>
+                                            </Typography>
 
-                                            </CardContent>
-                                            <CardActions>
-                                                Reactjs
-                                            </CardActions>
-                                        </Card>
+                                        </CardContent>
+                                        <CardActions>
 
-                                    </Grid>
+                                        </CardActions>
+                                    </Card>
+
                                 </Grid>
-                            
+                            </Grid>
+
 
                         </Grid>
 

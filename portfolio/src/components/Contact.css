@@ -1,3 +1,10 @@
-. contact_page{
-    
+.social-links{
+    color: black;
+}
+
+.social-links a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
 }
