@@ -10,7 +10,10 @@
 }
 
 .btn {
-    background-color: rgb(120, 173, 110);
+    background-color: rgb(120, 173, 110) !important;
+    justify-content: center !important;
+}
+.btn_class{
     justify-content: center;
 }
 .btn:hover{
