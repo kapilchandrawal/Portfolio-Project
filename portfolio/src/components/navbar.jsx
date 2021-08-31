@@ -15,7 +15,7 @@ export default function Navbar() {
             <Router>
                 <div className="header_bar">
                     <div className="nav-img" >
-                        <img src={profile} alt="test" height="50px" /><span className="my_name">Kapil Chandrawal</span>
+                        <img src={profile} alt="test"  height="50px" /><span className="my_name">Kapil Chandrawal</span>
                     </div>
                     <div className="navbar">
                         <Link to='/'>About Me</Link>
